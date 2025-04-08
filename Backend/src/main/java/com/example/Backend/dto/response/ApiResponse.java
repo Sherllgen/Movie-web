@@ -1,4 +1,4 @@
-package main.java.com.example.Backend.dto.response;
+package com.example.Backend.dto.response;
 
 public class ApiResponse {
 }

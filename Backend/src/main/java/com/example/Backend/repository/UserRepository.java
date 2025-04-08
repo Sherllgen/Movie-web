@@ -1,4 +1,4 @@
-package main.java.com.example.Backend.repository;
+package com.example.Backend.repository;
 
 public interface UserRepository {
 }

@@ -1,4 +1,4 @@
-package main.java.com.example.Backend.model;
+package com.example.Backend.model;
 
 public class Rating {
 }

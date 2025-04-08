@@ -1,4 +1,4 @@
-package main.java.com.example.Backend.model.enums;
+package com.example.Backend.model.enums;
 
 public enum MovieType {
 }

@@ -1,4 +1,4 @@
-package main.java.com.example.Backend.exception;
+package com.example.Backend.exception;
 
 public class BadRequestException extends RuntimeException {
   public BadRequestException(String message) {
