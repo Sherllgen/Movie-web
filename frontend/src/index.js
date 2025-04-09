@@ -4,10 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import MovieDetail from './pages/MovieDetail';
+import Watch from './pages/Watch';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}> 
+          <Route index element={<Home />} />
+          <Route path="/movie/:id" element={<MovieDetail />} />
+          <Route path="/watch/:movieId/:episodeId" element={<Watch />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
