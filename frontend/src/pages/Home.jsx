@@ -1,11 +1,11 @@
-import HeroSection from "../components/HeroSection";
+import Poster from "../components/Poster";
 import MovieSection from "../components/MovieSection";
 import FeaturedSection from "../components/FeaturedSection";
 
 function Home() {
   return (
     <div className="space-y-16">
-      <HeroSection />
+      <Poster />
 
       <MovieSection title="Popular Movies" />
       <MovieSection title="Trending" />
