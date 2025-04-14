@@ -22,7 +22,7 @@ function Header() {
     <>
       <header
         className={`top-0 left-0 w-full z-50 px-4 py-3 flex items-center justify-between transition-all duration-300 ${
-          window.innerWidth < 1280
+          window.innerWidth < 1024
             ? "absolute bg-gray-800"
             : isScrolled
             ? "sticky bg-gray-800"
@@ -30,7 +30,7 @@ function Header() {
         }`}
       >
         {/* Mobile: Menu Icon */}
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           {isMobileMenuOpen ? (
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <XMarkIcon className="w-6 h-6 z-50 text-white" />
@@ -55,7 +55,7 @@ function Header() {
           </div>
         </div>
         {/* Search bar */}
-        {window.innerWidth >= 1280 && (
+        {window.innerWidth >= 1024 && (
           <div className="flex-1 mx-6 max-w-xs w-full bg-gray-500 bg-opacity-15 rounded">
             <div className="flex items-center rounded overflow-hidden px-3 py-1">
               <MagnifyingGlassIcon className="w-5 h-5 text-white" />
@@ -69,22 +69,21 @@ function Header() {
         )}
 
         {/* Search Icon */}
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <MagnifyingGlassIcon className="w-5 h-5 text-white" />
         </div>
 
         {/* Menu (Desktop only) */}
-        <nav className="hidden xl:flex items-center gap-8 text-sm text-gray-200 flex-1 justify-center">
-          <a href="">Chủ Đề</a>
-          <a href="">Phim Lẻ</a>
-          <a href="">Phim Bộ</a>
-          <a href="">Quốc gia</a>
-          <a href="">Diễn Viên</a>
-          <a href="">Lịch chiếu</a>
+        <nav className="hidden lg:flex items-center gap-8 text-sm text-white flex-1 justify-center">
+          <a href="" className="hover:text-amber-200 transition-colors duration-200">Chủ Đề</a>
+          <a href="" className="hover:text-amber-200 transition-colors duration-200">Phim Lẻ</a>
+          <a href="" className="hover:text-amber-200 transition-colors duration-200">Phim Bộ</a>
+          <a href="" className="hover:text-amber-200 transition-colors duration-200">Quốc gia</a>
+          <a href="" className="hover:text-amber-200 transition-colors duration-200">Anime</a>
         </nav>
 
         {/* Thành Viên */}
-        <div className="hidden xl:flex items-center gap-2 bg-white text-black px-3 py-1 rounded-full text-sm">
+        <div className="hidden lg:flex items-center gap-2 bg-white text-black px-3 py-1 rounded-full text-sm">
           <UserIcon className="w-4 h-4" />
           <span>Thành viên</span>
         </div>
@@ -112,10 +111,7 @@ function Header() {
                 Quốc gia
               </a>
               <a href="" className="block">
-                Diễn Viên
-              </a>
-              <a href="" className="block">
-                Lịch chiếu
+                Anime
               </a>
             </nav>
           </div>
