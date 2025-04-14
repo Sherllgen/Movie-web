@@ -1,4 +1,12 @@
 package com.example.Backend.repository;
 
-public interface SeasonRepository {
+import com.example.Backend.model.Season;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SeasonRepository extends JpaRepository<Season, String> {
+    // Define custom query methods if needed
+    // For example, find seasons by series or other attributes
+    Season findBySeasonId(String seasonId);
 }
