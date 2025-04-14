@@ -80,6 +80,7 @@ function Header() {
           <a href="" className="hover:text-amber-200 transition-colors duration-200">Phim Bộ</a>
           <a href="" className="hover:text-amber-200 transition-colors duration-200">Quốc gia</a>
           <a href="" className="hover:text-amber-200 transition-colors duration-200">Anime</a>
+          <a href="" className="hover:text-amber-200 transition-colors duration-200">Lịch chiếu</a>
         </nav>
 
         {/* Thành Viên */}
@@ -112,6 +113,9 @@ function Header() {
               </a>
               <a href="" className="block">
                 Anime
+              </a>
+              <a href="" className="block">
+                Lịch chiếu
               </a>
             </nav>
           </div>
