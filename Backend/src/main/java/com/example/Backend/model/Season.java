@@ -1,6 +1,7 @@
 package com.example.Backend.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -21,6 +22,10 @@ public class Season {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank
+    @Column(unique = true)
+    private Integer tmdbSeasonId;
 
     @Column(nullable = false)
     private Integer seasonNumber;

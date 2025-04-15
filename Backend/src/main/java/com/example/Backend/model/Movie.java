@@ -23,7 +23,7 @@ public class Movie {
 
     @NotBlank
     @Column(unique = true)
-    private Integer tmdbId;
+    private Integer tmdbMovieId;
 
     @Column(nullable = false)
     private String title;
