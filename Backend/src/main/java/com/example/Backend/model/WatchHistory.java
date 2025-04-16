@@ -2,7 +2,6 @@ package com.example.Backend.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.boot.context.event.SpringApplicationEvent;
 
 import java.time.LocalDateTime;
 

@@ -21,7 +21,7 @@ public class UserCollectionItem {
 
     @ManyToOne
     @JoinColumn(name = "collection_id", nullable = false)
-    private UserCollection collection;
+    private UserCollection userCollection;
 
     @ManyToOne
     @JoinColumn(name = "movie_id", nullable = false)

@@ -24,5 +24,5 @@ public class Genre {
     private String description;
 
     @ManyToMany(mappedBy = "genre")
-    private Set<Movie> movies = new HashSet<>()
+    private Set<Movie> movies = new HashSet<>();
 }
