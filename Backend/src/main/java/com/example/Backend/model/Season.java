@@ -1,6 +1,7 @@
 package com.example.Backend.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -22,6 +23,14 @@ public class Season {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "movie_id", nullable = false)
+    private Movie movie;
+
+    @NotBlank
+    @Column(unique = true)
+    private Integer tmdbSeasonId;
+
     @Column(nullable = false)
     private Integer seasonNumber;
 
@@ -42,10 +51,6 @@ public class Season {
 
     @OneToMany(mappedBy = "season", cascade = CascadeType.ALL)
     private Set<Episode> episodes = new HashSet<>();
-
-    @ManyToOne
-    @JoinColumn(name = "movie_id", nullable = false)
-    private Movie movie;
 
     @PrePersist
     protected void onUpdate() {

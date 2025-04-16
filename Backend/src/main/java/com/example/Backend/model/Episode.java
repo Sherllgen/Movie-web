@@ -1,6 +1,7 @@
 package com.example.Backend.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -19,6 +20,10 @@ public class Episode {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank
+    @Column(unique = true)
+    private Integer tmdbEpisodeId;
 
     @Column(nullable = false)
     private Integer episodeNumber;
