@@ -15,14 +15,15 @@ public class SeasonDTOConverter {
     public SeasonDTO convert(Season from) {
         return new SeasonDTO(
                 from.getId(),
+                from.getMovie().getId(),
                 from.getTmdbSeasonId(),
                 from.getSeasonNumber(),
-                from.getReleaseDate(),
                 from.getTitle(),
                 from.getEpisodeCount(),
                 from.getPosterPath(),
                 from.getVoteAverage(),
                 from.getVoteCount(),
+                from.getReleaseDate(),
                 from.getUpdatedAt());
     }
 

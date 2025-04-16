@@ -2,6 +2,8 @@ package com.example.Backend.dto.Movie;
 
 
 import com.example.Backend.dto.Genre.GenreDTO;
+import com.example.Backend.dto.Season.SeasonDTO;
+import com.example.Backend.model.Season;
 import com.example.Backend.model.enums.MovieStatus;
 
 import java.time.LocalDateTime;
@@ -25,5 +27,6 @@ public record MovieDTO(
         String country,
         MovieStatus status,
         LocalDateTime updatedAt,
-        Set<GenreDTO> genres) {
+        Set<Long> genreIds,
+        Set<Long> seasonIds) {
 }

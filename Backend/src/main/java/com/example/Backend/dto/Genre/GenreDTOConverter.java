@@ -1,8 +1,6 @@
 package com.example.Backend.dto.Genre;
 
-import com.example.Backend.dto.Movie.MovieDTO;
 import com.example.Backend.model.Genre;
-import com.example.Backend.model.Movie;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -11,8 +9,7 @@ import java.util.stream.Collectors;
 
 @Component
 public class GenreDTOConverter {
-    public GenreDTOConverter(){
-    }
+    public GenreDTOConverter() {}
 
     public GenreDTO convert(Genre from) {
         return new GenreDTO(

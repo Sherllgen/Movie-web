@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 
 @Component
 public class UserDTOConverter {
-
     private final RoleDTOConverter roleDTOConverter;
 
     public UserDTOConverter(RoleDTOConverter roleDTOConverter) {

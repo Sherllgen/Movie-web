@@ -23,6 +23,10 @@ public class Season {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "movie_id", nullable = false)
+    private Movie movie;
+
     @NotBlank
     @Column(unique = true)
     private Integer tmdbSeasonId;
@@ -47,10 +51,6 @@ public class Season {
 
     @OneToMany(mappedBy = "season", cascade = CascadeType.ALL)
     private Set<Episode> episodes = new HashSet<>();
-
-    @ManyToOne
-    @JoinColumn(name = "movie_id", nullable = false)
-    private Movie movie;
 
     @PrePersist
     protected void onUpdate() {
