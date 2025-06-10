@@ -5,7 +5,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import logoimg from "../assets/logo-img.png";
+import logoimg from "../../assets/logo-img.png";
 
 
 function Header() {
@@ -75,12 +75,12 @@ function Header() {
 
         {/* Menu (Desktop only) */}
         <nav className="hidden lg:flex items-center gap-8 text-sm text-white flex-1 justify-center">
-          <a href="" className="hover:text-amber-200 transition-colors duration-200">Chủ Đề</a>
-          <a href="" className="hover:text-amber-200 transition-colors duration-200">Phim Lẻ</a>
-          <a href="" className="hover:text-amber-200 transition-colors duration-200">Phim Bộ</a>
-          <a href="" className="hover:text-amber-200 transition-colors duration-200">Quốc gia</a>
-          <a href="" className="hover:text-amber-200 transition-colors duration-200">Anime</a>
-          <a href="" className="hover:text-amber-200 transition-colors duration-200">Lịch chiếu</a>
+          <a href="/" className="hover:text-amber-200 transition-colors duration-200">Chủ Đề</a>
+          <a href="/" className="hover:text-amber-200 transition-colors duration-200">Phim Lẻ</a>
+          <a href="/" className="hover:text-amber-200 transition-colors duration-200">Phim Bộ</a>
+          <a href="/" className="hover:text-amber-200 transition-colors duration-200">Quốc gia</a>
+          <a href="/" className="hover:text-amber-200 transition-colors duration-200">Anime</a>
+          <a href="/" className="hover:text-amber-200 transition-colors duration-200">Lịch chiếu</a>
         </nav>
 
         {/* Thành Viên */}
@@ -99,22 +99,22 @@ function Header() {
               <span>Thành viên</span>
             </div>
             <nav className="space-y-2 text-sm">
-              <a href="" className="block">
+              <a href="/" className="block">
                 Chủ Đề
               </a>
-              <a href="" className="block">
+              <a href="/" className="block">
                 Phim Lẻ
               </a>
-              <a href="" className="block">
+              <a href="/" className="block">
                 Phim Bộ
               </a>
-              <a href="" className="block">
+              <a href="/" className="block">
                 Quốc gia
               </a>
-              <a href="" className="block">
+              <a href="/" className="block">
                 Anime
               </a>
-              <a href="" className="block">
+              <a href="/" className="block">
                 Lịch chiếu
               </a>
             </nav>
