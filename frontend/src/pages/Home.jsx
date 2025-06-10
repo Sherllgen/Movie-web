@@ -1,7 +1,7 @@
-import Poster from "../components/Poster";
-import MovieSection from "../components/MovieSection";
-import FeaturedSection from "../components/FeaturedSection";
-import RankingList from "../components/RankingList";
+import Poster from "../components/ui/Poster";
+import MovieSection from "../components/section/MovieSection";
+import FeaturedSection from "../components/section/FeaturedSection";
+import RankingList from "../components/ui/RankingList";
 
 function Home() {
   return (
